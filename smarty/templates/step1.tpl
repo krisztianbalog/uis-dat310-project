@@ -1,6 +1,6 @@
 <h2>Step 1</h2>
 
-<form role="form">
+<form role="form" action="index.php" method="PUT">
     <div class="form-group">
         <label for="arrival">Arrival date</label>
         <input type="date" class="form-control" id="arrival" name="arrival">
@@ -17,7 +17,6 @@
             <option>5</option>
         </select>
     </div>
-</form>    
 
 <h3>Select property</h3>
 <table class="table">
@@ -36,6 +35,8 @@
         <td>XX NOK</td>
     </tr>
 </table>    
+<input type="hidden" name="step" value="2" /> 
 
-<button type="submit" class="btn btn-default">Next</button>
+<input type="submit" class="btn btn-default" value="Next">
 
+</form>    
