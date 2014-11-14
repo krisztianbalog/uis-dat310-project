@@ -9,8 +9,8 @@
         <script src="//cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-        {if $step == 1}
-            {include file="step1.tpl"}
-        {/if}
+        <div class="container">
+            {include file="step{$step}.tpl"}
+        </div>
     </body>
 </html>

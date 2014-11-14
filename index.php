@@ -17,7 +17,7 @@ $smarty->setCompileDir(PROJECT_DIR . "/smarty/templates_c");
 $smarty->setCacheDir(PROJECT_DIR . "/smarty/cache");
 $smarty->setConfigDir(PROJECT_DIR . "/smarty/configs");
 
-$step = 1;
+$step = isset($_REQUEST['step']) ? $_REQUEST['step'] : 1;
 
 $smarty->assign("step", $step);
 
